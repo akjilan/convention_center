@@ -1,0 +1,177 @@
+/* fonts 
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300;400;900&display=swap");
+
+/* Common css */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar section  */
+
+.nav-items {
+  display: flex;
+  justify-content: end;
+}
+.nav-item {
+  padding: 0 1vw;
+}
+.nav-link,
+.navbar-brand {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 600px;
+  letter-spacing: 2px;
+
+  color: rgb(0, 0, 0);
+}
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+.carousel-item {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+
+  /* position: relative!important; */
+}
+.carousel-inner-caption h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 700px;
+  font-family: "Times New Roman", Times, serif;
+}
+.carousel-inner-caption p {
+  color: rgb(255, 255, 255);
+  font-weight: 700px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 2rem 0 0 0;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+/* card-section */
+.card-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-section-button {
+  display: flex;
+  justify-content: start;
+}
+
+/* package section 
+ */
+/* .package-inner{
+  display: flex;
+  gap: 3rem;
+ } */
+
+.package-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  padding: 0 3rem;
+}
+.card:hover .card-body {
+  background-color: #3f87f5;
+  color: white;
+}
+.package-button a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.card:hover .package-btn {
+  background-color: #ffffff;
+  color: #002a6a;
+  font: bold;
+  font-weight: 600;
+}
+
+/* client seciton  */
+/* .clients-inner{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+} */
+#clients {
+  margin: 10rem 0;
+}
+.client {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 10px;
+}
+
+.client-tittle {
+  font: bold;
+  font-weight: 600;
+  padding-top: 1rem;
+}
+.client-desc {
+  padding: 0.5rem 3rem;
+}
+
+.clients-inner {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+/* footer section */
+#questions {
+  margin: 7rem 0;
+  padding: 0;
+  width: 100%;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rem;
+}
+.copyright-text {
+  display: flex;
+  align-items: center;
+}
+.apps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apps img {
+  cursor: pointer;
+  width: 135px;
+  height: auto;
+}
